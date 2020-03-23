@@ -1,5 +1,10 @@
 import random
 
+"""
+Task 1
+
+"""
+
 def shellSort(arr): 
   
     n = len(arr) 
@@ -49,9 +54,10 @@ def quickSort(arr,start,end):
 
 
 arr_Size = []
+maxArrSize = 300;
 
 for x in range(2):
-    rand = random.randint(256,300)
+    rand = random.randint(256,maxArrSize)
 
     if(rand in arr_Size):
         #in the case of a duplicate array size, the system simply adds 1 to the size of the second array, making them unequal
@@ -74,17 +80,23 @@ for x in range(0,size_ArrA):
 for x in range(0,size_ArrB):
     arrB.append(random.randint(0,1024))
 
-print("Before sort")
-print(arrA)
-print()
+print("\nBefore sort Array A of size:")
 print(arrB)
 
-shellSort(arrA)
+quickSort(arrB, 0, (len(arrB)-1))
 
-print(arrA)
-
-n = len(arrB)
-quickSort(arrB, 0, n)
-
+print("\nAfter sort Array A")
 print(arrB)
-  
+
+print("\nBefore sort Array B of size:")
+print(arrB)
+
+quickSort(arrB, 0, (len(arrB)-1))
+
+print("\nAfter sort Array B")
+print(arrB)
+
+
+"""
+Task 2
+"""
