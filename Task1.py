@@ -81,12 +81,12 @@ for x in range(0,size_ArrB):
     arrB.append(random.randint(0,1024))
 
 print("\nBefore sort Array A of size:")
-print(arrB)
+print(arrA)
 
-quickSort(arrB, 0, (len(arrB)-1))
+shellSort(arrA)
 
 print("\nAfter sort Array A")
-print(arrB)
+print(arrA)
 
 print("\nBefore sort Array B of size:")
 print(arrB)
