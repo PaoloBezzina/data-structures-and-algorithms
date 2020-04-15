@@ -54,7 +54,7 @@ def quickSort(arr,start,end):
 
 
 arr_Size = []
-maxArrSize = 300;
+maxArrSize = 275;
 
 for x in range(2):
     rand = random.randint(256,maxArrSize)
@@ -100,3 +100,44 @@ print(arrB)
 """
 Task 2
 """
+
+#Using Merge function from Merge Sort
+
+def mergeArrays(arrA, arrB, size_ArrA, size_ArrB):
+
+    size_ArrC = arr_SizeA + arr_Size[1]
+    arrC = []
+    i,j,k = 0,0,0
+
+    while i < size_ArrA and j < size_ArrB: 
+
+        #check elements of both arrays, storing smallest element in both arrays at current position
+        if arrA[i] < arrB[j]: 
+            arrC[k] = arrA[i] 
+            k = k + 1
+            i = i + 1
+        else: 
+            arrC[k] = arrB[j] 
+            k = k + 1
+            j = j + 1
+
+    # Store all other elements
+
+    #from first array
+    while i < arrA: 
+        arrC[k] = arrA[i]; 
+        k = k + 1
+        i = i + 1
+
+    #from second array
+    while j < arrB: 
+        arrC[k] = arrB[j]; 
+        k = k + 1
+        j = j + 1
+
+    arrA = [1, 3, 5, 7] 
+    n1 = len(arrA) 
+
+arrZ = [2, 4, 6, 8] 
+n2 = len(arrZ) 
+mergeArrays(arrA, arrB, n1, n2); 
