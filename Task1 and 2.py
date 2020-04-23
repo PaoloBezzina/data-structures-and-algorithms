@@ -142,6 +142,4 @@ def mergeArrays(arr1, arr2):
 
 mergeArrays(arrA, arrB);
 
-"""
-Task 3
-"""
+
