@@ -17,5 +17,6 @@ else:
     print(A_Extreme)
 
 """
-
+If an array is sorted the A[i] element will always be larger than the previous value(A[i-1]) and smaller the the next value(A[i+1]).
+Therefore. by skipping the first and last elements of the array,since these cannot have smaller or larger elements, you will never end up with extreme values.
 """
