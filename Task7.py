@@ -46,3 +46,5 @@ while exit == False:
     else:
         insertNode(root, Node(val))
 
+def printTree(root):
+    
