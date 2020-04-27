@@ -25,13 +25,27 @@ def insertNode(root, node):
             else:
                 insertNode(root.rightNode, node)
 
-def in_order_print(root):
-    if not root:
-        return
-    in_order_print(root.leftNode)
-    print root.data
-    in_order_print(root.rightNode)
 
+def printTree(root, indent):
+    
+    space = 10
+
+    if root is None:
+        return
+
+    indent = indent + space
+
+    #process right side
+    printTree(root.rightNode, indent)
+
+    #process root
+    for i in range(space, indent):
+        print(" "),
+    print(root.data)
+
+    #process left side
+    printTree(root.leftNode, indent)
+    
 
 #user input for integers
 exit = bool(False)
@@ -45,6 +59,4 @@ while exit == False:
         exit = bool(True)
     else:
         insertNode(root, Node(val))
-
-def printTree(root):
-    
+        printTree(root, 0)
