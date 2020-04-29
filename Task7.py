@@ -52,7 +52,7 @@ exit = bool(False)
 
 root = Node(input("Input root node: "))
 
-while exit == False:
+while exit is False:
     val = input("Input new value or -1 to exit: ")
 
     if val == -1:

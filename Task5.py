@@ -9,7 +9,7 @@ def convert(expression):
 
     for item in items:
 
-        print stack
+        print (stack)
         
         if item in {"+", "-", "x", "/"}:
 
