@@ -50,12 +50,13 @@ def printTree(root, indent):
 #user input for integers
 exit = bool(False)
 
-root = Node(input("Input root node: "))
+root = Node(int(input("Input root node: ")))
 
 while exit is False:
-    val = input("Input new value or -1 to exit: ")
+    val = int(input("Input new value or -1 to exit: "))
 
     if val == -1:
+        print("Thank you")
         exit = bool(True)
     else:
         insertNode(root, Node(val))

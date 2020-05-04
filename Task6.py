@@ -21,7 +21,7 @@ def sieveOferatosthenes(num):
 
     for int in range(2, num): 
         if primeNumbers[int]: 
-            print int, 
+            print (int), 
 
 
 def checkPrime(num):
@@ -39,10 +39,12 @@ def checkPrime(num):
 
     return prime 
 
-toTest = 7
+
+
+toTest = int(input("Input number to check if prime: "))
 if checkPrime(toTest) is True:
-    print toTest, (" is a prime number")
+    print (toTest, (" is a prime number"))
 else:
-    print toTest, (" is not prime number")
+    print (toTest, (" is not prime number"))
 
 sieveOferatosthenes(30)

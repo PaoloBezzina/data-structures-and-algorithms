@@ -79,6 +79,10 @@ for x in range(0,size_ArrA):
 for x in range(0,size_ArrB):
     arrB.append(random.randint(0,1024))
 
+"""
+Testing Task1
+"""
+
 print("\nBefore sort Array A of size:")
 print(arrA)
 
@@ -87,7 +91,7 @@ shellSort(arrA)
 print("\nAfter sort Array A")
 print(arrA)
 
-print("\nBefore sort Array B of size:")
+print("\nBefore sort Array B")
 print(arrB)
 
 quickSort(arrB, 0, (len(arrB)-1))
@@ -137,7 +141,7 @@ def mergeArrays(arr1, arr2):
         k = k + 1
         j = j + 1
 
-    print("Merged arrays A and B")
+    print("\nMerged arrays A and B")
     print(arr3)
 
 mergeArrays(arrA, arrB);
