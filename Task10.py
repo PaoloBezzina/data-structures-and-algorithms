@@ -14,6 +14,11 @@ def largest(list):
             return m  
         else:
             return list[0]
-         
-a = [1,2,3,4,5,8,2,1,]
+
+"""
+Testing Task 10
+"""
+#a = [1,1,1,1,1]
+a = [1,2,3,4,5,8,2,1]
+
 print(largest(a))

@@ -13,18 +13,13 @@ def shellSort(arr):
   
         for i in range(gap,n): 
   
-            # add a[i] to the elements that have been gap sorted 
-            # save a[i] in temp and make a hole at position i 
             temp = arr[i] 
   
-            # shift earlier gap-sorted elements up until the correct 
-            # location for a[i] is found 
             j = i 
             while  j >= gap and arr[j-gap] >temp: 
                 arr[j] = arr[j-gap] 
                 j -= gap 
   
-            # put temp (the original a[i]) in its correct location 
             arr[j] = temp 
         gap //= 2
 
@@ -83,7 +78,7 @@ for x in range(0,size_ArrB):
 Testing Task1
 """
 
-print("\nBefore sort Array A of size:")
+print("\nBefore sort Array A")
 print(arrA)
 
 shellSort(arrA)
@@ -141,9 +136,13 @@ def mergeArrays(arr1, arr2):
         k = k + 1
         j = j + 1
 
-    print("\nMerged arrays A and B")
-    print(arr3)
-
-mergeArrays(arrA, arrB);
+    return arr3
 
 
+"""
+Testing Task2
+"""
+
+arrC = mergeArrays(arrA, arrB);
+print("\nMerged arrays A and B")
+print(arrC)

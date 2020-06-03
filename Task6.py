@@ -39,7 +39,9 @@ def checkPrime(num):
 
     return prime 
 
-
+"""
+Testing Task 6
+"""
 
 toTest = int(input("Input number to check if prime: "))
 if checkPrime(toTest) is True:

@@ -33,10 +33,10 @@ def convert(expression):
     
     return stack.pop()
 
-
+"""
+Testing Task 5
+"""
 print(convert("1 2 +"))
-print(convert("11 22 - 33 +"))
-print(convert("100 2 + 30 /"))
-print(convert("3 4 + 5 x"))
-
-
+print(convert("22 11 / 33 x"))
+print(convert("3 4 + 4"))
+print(convert("100 2 + 30 z"))

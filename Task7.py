@@ -28,7 +28,7 @@ def insertNode(root, node):
 
 def printTree(root, indent):
     
-    space = 10
+    space = 8
 
     if root is None:
         return

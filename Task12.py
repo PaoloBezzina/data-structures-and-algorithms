@@ -12,7 +12,7 @@ def fibonacci(n):
     list[0] = 1
     list[1] = 1
     
-    sum = 0
+    sum = 1
 
     for i in range(2, n+1):
         list[i] = list[i-1] + list[i-2]
@@ -24,4 +24,9 @@ def fibonacci(n):
 
     return sum
 
-print ("\nSum = ", fibonacci(10))
+"""
+Testing Task 12
+"""
+
+num = 10
+print ("\nSum = ", fibonacci(num))
