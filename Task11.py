@@ -27,4 +27,3 @@ print("Cos:")
 print (cos(1.2, terms))
 print("\nSin:")
 print (sin(1.2, terms))
-

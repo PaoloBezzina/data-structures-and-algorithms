@@ -16,7 +16,6 @@ Testing Task 9
 """
 
 array1 = [10,9,8,7,6,5,4,3,2,1]
-
 array2 = [1,2,2,3,4,5,6,7,7,8,9,7,10,2,7,2,8]
 
 checkRepeated(array1)
